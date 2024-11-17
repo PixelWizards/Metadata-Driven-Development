@@ -25,19 +25,19 @@ namespace PixelWizards.Services
         }
 
         /// <summary>
-        /// Get the item config for the given item name
+        /// Get the weapon config for the given item name
         /// </summary>
-        /// <param name="itemName">name of the item, should match item metadata table</param>
-        /// <returns>Item config for the given item, if not found, returns null</returns>
-        public WeaponConfig GetItemConfig(string itemName)
+        /// <param name="weaponName">name of the weapon, should match weapon metadata table</param>
+        /// <returns>Weapon config for the given weapon, if not found, returns null</returns>
+        public WeaponConfig GetWeaponConfig(string weaponName)
         {
-            var itemConfig = data.itemEntries.First(t => t.name == itemName);
-            if (itemConfig == null)
+            var weaponConfig = data.itemEntries.First(t => t.name == weaponName);
+            if (weaponConfig == null)
             {
-                Debug.Log("No Item: " + itemName + " in Data Container?");
+                Debug.Log("No Item: " + weaponName + " in Data Container?");
             }
 
-            return itemConfig;
+            return weaponConfig;
         }
     }
 }

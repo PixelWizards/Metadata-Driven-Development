@@ -26,8 +26,8 @@ namespace PixelWizards.Services
             ServiceLocator.Add(metadataService);
             
             // each google sheet has their own service to parse the appropriate data
-            var itemService = gameObject.GetOrAddComponent<WeaponMetadataService>();
-            ServiceLocator.Add(itemService);
+            var weaponService = gameObject.GetOrAddComponent<WeaponMetadataService>();
+            ServiceLocator.Add(weaponService);
         }
 
         private void InitServices()

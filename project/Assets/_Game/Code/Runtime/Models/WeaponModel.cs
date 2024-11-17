@@ -29,8 +29,8 @@ namespace PixelWizards.Models
         /// </summary>
         public string name;
         public string displayName;
-        [FormerlySerializedAs("level")] public int maxAmmo;
-        [FormerlySerializedAs("cost")] public int magSize;
+        public int maxAmmo;
+        public int magSize;
         public float power;
 
         /// <summary>

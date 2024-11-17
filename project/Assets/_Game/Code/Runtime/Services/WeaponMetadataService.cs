@@ -6,6 +6,7 @@ using PixelWizards.Shared.Base;
 using PixelWizards.Interfaces.Interfaces;
 using PixelWizards.Models;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace PixelWizards.Services
 {
@@ -13,10 +14,10 @@ namespace PixelWizards.Services
     {
         public static WeaponMetadataService Instance => ServiceLocator.Get<WeaponMetadataService>();
 
-        [SerializeField]
-        private string itemConfigTable = "Weapons";
+        [FormerlySerializedAs("itemConfigTable")] [SerializeField]
+        private string weaponTable = "Weapons";
         
-        private Dictionary<string, WeaponModel> items = new();
+        private Dictionary<string, WeaponModel> weapons = new();
         
         public void Init()
         {
@@ -25,7 +26,7 @@ namespace PixelWizards.Services
 
         public WeaponModel Get(string id)
         {
-            if (items.TryGetValue(id, out var item))
+            if (weapons.TryGetValue(id, out var item))
             {
                 return item;
             }
@@ -36,16 +37,16 @@ namespace PixelWizards.Services
 
         public List<WeaponModel> GetAll()
         {
-            return items.Select(entry => entry.Value).ToList();
+            return weapons.Select(entry => entry.Value).ToList();
         }
         
         private void ParseMetadata()
         {
             Debug.Log("Parsing weapon metadata");
-            items.Clear();
+            weapons.Clear();
             
             // get a reference to the table
-            var meta = BGRepo.I[itemConfigTable];
+            var meta = BGRepo.I[weaponTable];
 
             // how many rows do we have in this table?
             var count = meta.CountEntities;
@@ -86,16 +87,16 @@ namespace PixelWizards.Services
                 }
                 
                 // get the item config for this item
-                entry.config = MetadataService.Instance.GetItemConfig(entry.name);
+                entry.config = MetadataService.Instance.GetWeaponConfig(entry.name);
                 if (entry.config == null)
                 {
                     Debug.Log("Weapon: " + entry.name + " not configured correctly, missing entry in GameData?");
                 }
 
-                items.Add(entry.name, entry);
+                weapons.Add(entry.name, entry);
             }
 
-            Debug.Log($"Parse Weapon Metadata COMPLETE - parsed {items.Count} entries...");
+            Debug.Log($"Parse Weapon Metadata COMPLETE - parsed {weapons.Count} entries...");
         }
     }
 }
