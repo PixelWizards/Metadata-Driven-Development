@@ -70,3 +70,11 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+project/.idea
+project/UserSettings
+project/Library
+project/obj
+project/Logs
+project/Temp
+project/Assets/BansheeGz
+project/Assets/BansheeGz.meta
