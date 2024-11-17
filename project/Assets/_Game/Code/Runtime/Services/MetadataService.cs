@@ -21,7 +21,7 @@ namespace PixelWizards.Services
 
         private void ParseMetadata()
         {
-            Debug.Log("Parsing metadata");
+            Debug.Log("Parsing Game Data");
         }
 
         /// <summary>

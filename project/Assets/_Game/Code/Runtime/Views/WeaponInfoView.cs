@@ -17,8 +17,9 @@ namespace PixelWizards.Views
             var sb = new StringBuilder();
             sb.AppendLine("Name: " + entry.displayName);
             sb.AppendLine("Type : " + entry.type);
-            sb.AppendLine("Cost : " + entry.cost);
-            sb.AppendLine("Level : " + entry.level);
+            sb.AppendLine("Mag Size : " + entry.magSize);
+            sb.AppendLine("Max Ammo : " + entry.maxAmmo);
+            sb.AppendLine("Ammo Type: " + entry.ammoType);
             
             itemInfoLabel.text = sb.ToString();
         }

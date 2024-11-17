@@ -14,7 +14,7 @@ namespace PixelWizards.Services
         public static WeaponMetadataService Instance => ServiceLocator.Get<WeaponMetadataService>();
 
         [SerializeField]
-        private string itemConfigTable = "Items";
+        private string itemConfigTable = "Weapons";
         
         private Dictionary<string, WeaponModel> items = new();
         
@@ -41,7 +41,7 @@ namespace PixelWizards.Services
         
         private void ParseMetadata()
         {
-            Debug.Log("Parsing metadata");
+            Debug.Log("Parsing weapon metadata");
             items.Clear();
             
             // get a reference to the table
@@ -59,34 +59,43 @@ namespace PixelWizards.Services
                 {
                     name = attrRow.Get<string>("name"),
                     displayName = attrRow.Get<string>("displayName"),
-                    level = attrRow.Get<int>("level"),
-                    cost = attrRow.Get<int>("cost"),
-                    power = attrRow.Get<float>("power"),
+                    maxAmmo = attrRow.Get<int>("maxAmmo"),
+                    magSize = attrRow.Get<int>("magSize"),
                 };
                 
-                // parse the ItemType from GoogleSheets
+                // parse the Weapon Type from GoogleSheets
                 var type = attrRow.Get<string>("type");
-                if (Enum.TryParse(typeof(ItemType), type, out var output))
+                if (Enum.TryParse(typeof(WeaponType), type, out var output))
                 {
-                    entry.type = (ItemType)output;    
+                    entry.type = (WeaponType)output;    
                 }
                 else
                 {
-                    Debug.Log("Invalid Item type?" + type);
+                    Debug.Log("Invalid Weapon type? " + type);
                 }
                 
-
+                // parse the AmmoType from GoogleSheets
+                var ammoType = attrRow.Get<string>("ammoType");
+                if (Enum.TryParse(typeof(AmmoType), ammoType, out var ammoTypeOutput))
+                {
+                    entry.ammoType = (AmmoType)ammoTypeOutput;    
+                }
+                else
+                {
+                    Debug.Log("Invalid Ammo type? " + ammoType);
+                }
+                
                 // get the item config for this item
                 entry.config = MetadataService.Instance.GetItemConfig(entry.name);
                 if (entry.config == null)
                 {
-                    Debug.Log("Item: " + entry.name + " not configured correctly, missing entry in GameData?");
+                    Debug.Log("Weapon: " + entry.name + " not configured correctly, missing entry in GameData?");
                 }
 
                 items.Add(entry.name, entry);
             }
 
-            Debug.Log($"Parse Item Metadata COMPLETE - parsed {items.Count} entries...");
+            Debug.Log($"Parse Weapon Metadata COMPLETE - parsed {items.Count} entries...");
         }
     }
 }

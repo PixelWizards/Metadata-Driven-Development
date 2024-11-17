@@ -27,7 +27,8 @@ namespace PixelWizards.Gameplay
             {
                 // spawn the object
                 var go = Instantiate(item.config.prefab);
-                go.transform.position = new Vector3(x * 2, 0, y * 2);
+                go.transform.position = new Vector3(x * 4, 0.5f, y * 4);
+                go.transform.rotation = Quaternion.Euler(0, 45, 0);
                 
                 // and initialize it
                 var controller = go.GetComponent<WeaponMetadataController>();

@@ -18,7 +18,7 @@ namespace PixelWizards.Controllers
             thisWeapon = weapon;
 
             // spawn the item UI
-            view = Instantiate(Resources.Load<WeaponInfoView>("UIPanels/ItemCanvas"), transform);
+            view = Instantiate(Resources.Load<WeaponInfoView>("UIPanels/WeaponInfoCanvas"), transform);
             view.transform.localPosition = new Vector3(0, 1.5f, 0);
             
             // and initialize it

@@ -3,13 +3,22 @@ using UnityEngine.Serialization;
 
 namespace PixelWizards.Models
 {
-    public enum ItemType
+    public enum WeaponType
     {
-        Equippable,
-        Power,
-        Ammo,
-        Interactive,
-        Prop
+        AssaultRifle,
+        Pistol,
+        Revolver,
+        Shotgun,
+        SniperRifle,
+        SMG,
+    }
+
+    public enum AmmoType
+    {
+        Rifle,
+        Pistol,
+        Revolver,
+        Shotgun,
     }
     
     [System.Serializable]
@@ -20,14 +29,15 @@ namespace PixelWizards.Models
         /// </summary>
         public string name;
         public string displayName;
-        public int level;
-        public int cost;
+        [FormerlySerializedAs("level")] public int maxAmmo;
+        [FormerlySerializedAs("cost")] public int magSize;
         public float power;
 
         /// <summary>
-        /// we parse this from the string on google sheets into the enum in the code
+        /// we parse these from the string on google sheets into the enum in the code
         /// </summary>
-        public ItemType type;
+        public WeaponType type;
+        public AmmoType ammoType;
         
         /// <summary>
         /// this is loaded from game data scriptable object after we load the metadata
