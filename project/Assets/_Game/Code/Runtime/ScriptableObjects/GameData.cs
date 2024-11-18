@@ -4,15 +4,15 @@ using UnityEngine;
 
 namespace PixelWizards.ScriptableObjects
 {
-    [CreateAssetMenu(fileName = "GameData", menuName = "Cloudhead/Create New GameData", order = 1)]
+    [CreateAssetMenu(fileName = "GameData", menuName = "Metadata/Create New GameData", order = 1)]
     public class GameData : ScriptableObject
     {
-        [Header("Item Configs")]
-        public List<WeaponConfig> itemEntries = new();
+        [Header("Weapon Configs")]
+        public List<WeaponConfig> weaponEntries = new();
 
         public void AddItem(WeaponConfig weaponConfig)
         {
-            itemEntries.Add(weaponConfig);
+            weaponEntries.Add(weaponConfig);
         }
     }
 }

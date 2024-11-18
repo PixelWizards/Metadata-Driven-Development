@@ -31,7 +31,7 @@ namespace PixelWizards.Services
         /// <returns>Weapon config for the given weapon, if not found, returns null</returns>
         public WeaponConfig GetWeaponConfig(string weaponName)
         {
-            var weaponConfig = data.itemEntries.First(t => t.name == weaponName);
+            var weaponConfig = data.weaponEntries.First(t => t.name == weaponName);
             if (weaponConfig == null)
             {
                 Debug.Log("No Item: " + weaponName + " in Data Container?");

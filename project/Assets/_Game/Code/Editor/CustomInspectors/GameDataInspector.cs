@@ -21,7 +21,7 @@ namespace PixelWizards.CustomInspectors
             if (!GUILayout.Button("Export Object List", GUILayout.ExpandWidth(true), GUILayout.Height(35f))) return;
             
             StringBuilder sb = new();
-            foreach (var item in gameData.itemEntries)
+            foreach (var item in gameData.weaponEntries)
             {
                 sb.AppendLine(item.name);
                     
