@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &124251313382149767
+--- !u!1 &679612616038377087
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2452078436875472767}
-  - component: {fileID: 8486870051034821521}
-  - component: {fileID: 616971553515285058}
+  - component: {fileID: 1384825070411201148}
+  - component: {fileID: 521981305935759677}
+  - component: {fileID: 4877759828403200872}
   m_Layer: 0
   m_Name: Bullpup_1(Clone)
   m_TagString: Untagged
@@ -18,36 +18,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2452078436875472767
+--- !u!4 &1384825070411201148
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124251313382149767}
+  m_GameObject: {fileID: 679612616038377087}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 659308990750872211}
+  m_Father: {fileID: 8369393492308433980}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8486870051034821521
+--- !u!33 &521981305935759677
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124251313382149767}
+  m_GameObject: {fileID: 679612616038377087}
   m_Mesh: {fileID: 2354856129675132524, guid: ff136cfc751dc394cbaa09274904c4b7, type: 3}
---- !u!23 &616971553515285058
+--- !u!23 &4877759828403200872
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124251313382149767}
+  m_GameObject: {fileID: 679612616038377087}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -85,7 +85,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &216141140200800743
+--- !u!1 &4485413923721678302
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,8 +93,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 659308990750872211}
-  - component: {fileID: 6014137654966545061}
+  - component: {fileID: 8369393492308433980}
+  - component: {fileID: 853835831842203890}
   m_Layer: 0
   m_Name: Bullpup_1
   m_TagString: Untagged
@@ -102,29 +102,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &659308990750872211
+--- !u!4 &8369393492308433980
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 216141140200800743}
+  m_GameObject: {fileID: 4485413923721678302}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 2452078436875472767}
+  - {fileID: 1384825070411201148}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6014137654966545061
+--- !u!114 &853835831842203890
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 216141140200800743}
+  m_GameObject: {fileID: 4485413923721678302}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ce460a067bb410795761d285a93ab00, type: 3}
@@ -134,10 +134,10 @@ MonoBehaviour:
   thisWeapon:
     name: 
     displayName: 
-    level: 0
-    cost: 0
-    power: 0
+    maxAmmo: 0
+    magSize: 0
     type: 0
+    ammoType: 0
     config:
       name: 
       prefab: {fileID: 0}

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6987034482158376398
+--- !u!1 &4218570037742593963
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5281171617150385613}
-  - component: {fileID: 704937103766609565}
-  - component: {fileID: 89023926623953653}
+  - component: {fileID: 4936540690433980925}
+  - component: {fileID: 2200542211375989}
+  - component: {fileID: 8964473576102211737}
   m_Layer: 0
   m_Name: Revolver_3(Clone)
   m_TagString: Untagged
@@ -18,36 +18,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5281171617150385613
+--- !u!4 &4936540690433980925
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6987034482158376398}
+  m_GameObject: {fileID: 4218570037742593963}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 17.814783, y: 17.814783, z: 17.814783}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6280730487917450164}
+  m_Father: {fileID: 5479476266481672594}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &704937103766609565
+--- !u!33 &2200542211375989
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6987034482158376398}
+  m_GameObject: {fileID: 4218570037742593963}
   m_Mesh: {fileID: 42122070201431015, guid: b4b2aeb9954e1d340931d78b68fc6388, type: 3}
---- !u!23 &89023926623953653
+--- !u!23 &8964473576102211737
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6987034482158376398}
+  m_GameObject: {fileID: 4218570037742593963}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -86,7 +86,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &8307676537958373352
+--- !u!1 &6551572057108583457
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,8 +94,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6280730487917450164}
-  - component: {fileID: 4321370031840408549}
+  - component: {fileID: 5479476266481672594}
+  - component: {fileID: 494743534931363449}
   m_Layer: 0
   m_Name: Revolver_3
   m_TagString: Untagged
@@ -103,29 +103,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6280730487917450164
+--- !u!4 &5479476266481672594
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8307676537958373352}
+  m_GameObject: {fileID: 6551572057108583457}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 5281171617150385613}
+  - {fileID: 4936540690433980925}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4321370031840408549
+--- !u!114 &494743534931363449
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8307676537958373352}
+  m_GameObject: {fileID: 6551572057108583457}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ce460a067bb410795761d285a93ab00, type: 3}
@@ -135,10 +135,10 @@ MonoBehaviour:
   thisWeapon:
     name: 
     displayName: 
-    level: 0
-    cost: 0
-    power: 0
+    maxAmmo: 0
+    magSize: 0
     type: 0
+    ammoType: 0
     config:
       name: 
       prefab: {fileID: 0}

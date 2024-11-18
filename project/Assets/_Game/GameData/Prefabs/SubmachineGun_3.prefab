@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &104328947323117071
+--- !u!1 &2274917743031533196
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1103694646448014861}
-  - component: {fileID: 8852602480010372671}
+  - component: {fileID: 6692704087397859272}
+  - component: {fileID: 8842501067825044187}
   m_Layer: 0
   m_Name: SubmachineGun_3
   m_TagString: Untagged
@@ -17,29 +17,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1103694646448014861
+--- !u!4 &6692704087397859272
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104328947323117071}
+  m_GameObject: {fileID: 2274917743031533196}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 7856986889180491570}
+  - {fileID: 8397853190356191539}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8852602480010372671
+--- !u!114 &8842501067825044187
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104328947323117071}
+  m_GameObject: {fileID: 2274917743031533196}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ce460a067bb410795761d285a93ab00, type: 3}
@@ -49,14 +49,14 @@ MonoBehaviour:
   thisWeapon:
     name: 
     displayName: 
-    level: 0
-    cost: 0
-    power: 0
+    maxAmmo: 0
+    magSize: 0
     type: 0
+    ammoType: 0
     config:
       name: 
       prefab: {fileID: 0}
---- !u!1 &7635701320735260280
+--- !u!1 &8618106307784692226
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,9 +64,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7856986889180491570}
-  - component: {fileID: 4939103378667047565}
-  - component: {fileID: 1960864898847154391}
+  - component: {fileID: 8397853190356191539}
+  - component: {fileID: 2737213643373494449}
+  - component: {fileID: 5354888038385679460}
   m_Layer: 0
   m_Name: SubmachineGun_3(Clone)
   m_TagString: Untagged
@@ -74,36 +74,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7856986889180491570
+--- !u!4 &8397853190356191539
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7635701320735260280}
+  m_GameObject: {fileID: 8618106307784692226}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1103694646448014861}
+  m_Father: {fileID: 6692704087397859272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4939103378667047565
+--- !u!33 &2737213643373494449
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7635701320735260280}
+  m_GameObject: {fileID: 8618106307784692226}
   m_Mesh: {fileID: 906228969653317975, guid: 7e4331816d583764295dc795bb7d94c5, type: 3}
---- !u!23 &1960864898847154391
+--- !u!23 &5354888038385679460
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7635701320735260280}
+  m_GameObject: {fileID: 8618106307784692226}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1

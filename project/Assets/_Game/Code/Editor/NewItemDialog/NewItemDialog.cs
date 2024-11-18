@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
 using PixelWizards.Controllers;
@@ -6,7 +5,6 @@ using PixelWizards.DTO;
 using PixelWizards.ScriptableObjects;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using Object = UnityEngine.Object;
 
 namespace PixelWizards.EditorTools

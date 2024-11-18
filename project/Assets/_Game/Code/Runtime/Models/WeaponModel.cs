@@ -31,7 +31,6 @@ namespace PixelWizards.Models
         public string displayName;
         public int maxAmmo;
         public int magSize;
-        public float power;
 
         /// <summary>
         /// we parse these from the string on google sheets into the enum in the code

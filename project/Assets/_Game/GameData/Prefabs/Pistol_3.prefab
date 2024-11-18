@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1723105507623018701
+--- !u!1 &6459060105994677799
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 890015658890844121}
-  - component: {fileID: 7066183588445979086}
-  - component: {fileID: 5826205326100087997}
+  - component: {fileID: 7085327825439458707}
+  - component: {fileID: 6369808180363350903}
+  - component: {fileID: 6221970276854945861}
   m_Layer: 0
   m_Name: Pistol_3(Clone)
   m_TagString: Untagged
@@ -18,36 +18,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &890015658890844121
+--- !u!4 &7085327825439458707
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723105507623018701}
+  m_GameObject: {fileID: 6459060105994677799}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8415945138105339924}
+  m_Father: {fileID: 8126850448649742920}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7066183588445979086
+--- !u!33 &6369808180363350903
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723105507623018701}
+  m_GameObject: {fileID: 6459060105994677799}
   m_Mesh: {fileID: -1354975916618410256, guid: b553d5904ac851d47b7cf66185950272, type: 3}
---- !u!23 &5826205326100087997
+--- !u!23 &6221970276854945861
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723105507623018701}
+  m_GameObject: {fileID: 6459060105994677799}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -86,7 +86,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &5267904457882965524
+--- !u!1 &8253392247682989715
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,8 +94,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8415945138105339924}
-  - component: {fileID: 7395138497226578622}
+  - component: {fileID: 8126850448649742920}
+  - component: {fileID: 7731877755295510982}
   m_Layer: 0
   m_Name: Pistol_3
   m_TagString: Untagged
@@ -103,29 +103,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8415945138105339924
+--- !u!4 &8126850448649742920
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5267904457882965524}
+  m_GameObject: {fileID: 8253392247682989715}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 890015658890844121}
+  - {fileID: 7085327825439458707}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7395138497226578622
+--- !u!114 &7731877755295510982
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5267904457882965524}
+  m_GameObject: {fileID: 8253392247682989715}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ce460a067bb410795761d285a93ab00, type: 3}
@@ -135,10 +135,10 @@ MonoBehaviour:
   thisWeapon:
     name: 
     displayName: 
-    level: 0
-    cost: 0
-    power: 0
+    maxAmmo: 0
+    magSize: 0
     type: 0
+    ammoType: 0
     config:
       name: 
       prefab: {fileID: 0}

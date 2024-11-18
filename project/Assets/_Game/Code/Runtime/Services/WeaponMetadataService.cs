@@ -6,7 +6,6 @@ using PixelWizards.Shared.Base;
 using PixelWizards.Interfaces.Interfaces;
 using PixelWizards.Models;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace PixelWizards.Services
 {
@@ -14,7 +13,7 @@ namespace PixelWizards.Services
     {
         public static WeaponMetadataService Instance => ServiceLocator.Get<WeaponMetadataService>();
 
-        [FormerlySerializedAs("itemConfigTable")] [SerializeField]
+        [SerializeField]
         private string weaponTable = "Weapons";
         
         private Dictionary<string, WeaponModel> weapons = new();

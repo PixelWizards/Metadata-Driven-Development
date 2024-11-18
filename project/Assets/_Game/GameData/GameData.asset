@@ -12,4 +12,122 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22be9e417b0ed61458c2cf947c6f06fc, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  itemEntries: []
+  weaponEntries:
+  - name: AssaultRifle2_1
+    prefab: {fileID: 4010465823316983095, guid: 76f68a1b8022d5d40bdc3009da90fbca,
+      type: 3}
+  - name: AssaultRifle2_2
+    prefab: {fileID: 2216403209631695834, guid: a7f39505650a23c41ab8732342fe5df9,
+      type: 3}
+  - name: AssaultRifle2_3
+    prefab: {fileID: 7799944491844559438, guid: 22cf93bd1fc44a64a88cab301b7a3fa6,
+      type: 3}
+  - name: AssaultRifle2_4
+    prefab: {fileID: 2709856075257077972, guid: dbdc7279ae8f2424d93c6f5e45cb878d,
+      type: 3}
+  - name: AssaultRifle_1
+    prefab: {fileID: 6872073215835738412, guid: effa0a5f76430b14bb24354e76b55867,
+      type: 3}
+  - name: AssaultRifle_2
+    prefab: {fileID: 4425101530285538271, guid: 9a8268bb5fc8aa44f9bf6e509a17170c,
+      type: 3}
+  - name: AssaultRifle_3
+    prefab: {fileID: 4344021097050660167, guid: f407ab75716cb4145bd38578ce73229d,
+      type: 3}
+  - name: AssaultRifle_4
+    prefab: {fileID: 6888173577995739264, guid: a205ea2f93a9cc54d8766c0b6d2b0071,
+      type: 3}
+  - name: AssaultRifle_5
+    prefab: {fileID: 4818384852243669382, guid: af4cb8fb2e51d454e9ba9a7de16aad88,
+      type: 3}
+  - name: Bullpup_1
+    prefab: {fileID: 4485413923721678302, guid: 24f526cff373ef1479d85b1ef9865ea5,
+      type: 3}
+  - name: Bullpup_2
+    prefab: {fileID: 3300816373835076146, guid: 9224fae0f6c79d44e92c5a8e67b99cd1,
+      type: 3}
+  - name: Bullpup_3
+    prefab: {fileID: 8816343346144117025, guid: 26ad31c21e2358c4ab06c722ac3287b0,
+      type: 3}
+  - name: Pistol_1
+    prefab: {fileID: 3275780931367649963, guid: 274f11edea253f544bd4cd05e8f7c26f,
+      type: 3}
+  - name: Pistol_2
+    prefab: {fileID: 561228790995484556, guid: 6b4358cd46070a54db019af69f2709bf, type: 3}
+  - name: Pistol_3
+    prefab: {fileID: 8253392247682989715, guid: 7addf828d30f9ab42a14fd4ea9ec271f,
+      type: 3}
+  - name: Pistol_4
+    prefab: {fileID: 5546352352942410686, guid: 955dee3bf53145d43bcb5f0ba0d97f3d,
+      type: 3}
+  - name: Pistol_5
+    prefab: {fileID: 1504168243939425397, guid: 428fa1f91be43374fab1fcf02643012a,
+      type: 3}
+  - name: Pistol_6
+    prefab: {fileID: 4207765477255144203, guid: e8b9a10b8e6253a49a022ac162e5a621,
+      type: 3}
+  - name: Revolver_1
+    prefab: {fileID: 2926628882013677737, guid: 96e998ac0418b3147ba8e3dfcc29d791,
+      type: 3}
+  - name: Revolver_2
+    prefab: {fileID: 4802757023821827594, guid: ef71ac96a232a804b8a3213eaf73141d,
+      type: 3}
+  - name: Revolver_3
+    prefab: {fileID: 6551572057108583457, guid: 7c39726d0d096f44db06ed684feeb556,
+      type: 3}
+  - name: Revolver_4
+    prefab: {fileID: 200730769081445674, guid: 953800ccdfe8d0140983c2fd9b74570e, type: 3}
+  - name: Revolver_5
+    prefab: {fileID: 7856322405787393786, guid: 78f5a3f359b7118498455c30adb05d67,
+      type: 3}
+  - name: Shotgun_1
+    prefab: {fileID: 2302209398789963983, guid: a8968b55fd524644c87b9ddaae401700,
+      type: 3}
+  - name: Shotgun_2
+    prefab: {fileID: 2538109308176925533, guid: f69174881789b1947b83b81d46c2c9e1,
+      type: 3}
+  - name: Shotgun_3
+    prefab: {fileID: 7019026011704303833, guid: 3d91732282cad894ea30f675bc47d972,
+      type: 3}
+  - name: Shotgun_4
+    prefab: {fileID: 4489757726487035648, guid: fdb80d916a7de67488bec4ce52eff3d8,
+      type: 3}
+  - name: Shotgun_SawedOff
+    prefab: {fileID: 4750715341976242605, guid: 7e3a5eb2991bd9c4494027808a6ef515,
+      type: 3}
+  - name: Shotgun_ShortStock
+    prefab: {fileID: 4950542756487083790, guid: aa8565063b9f2ae499e1dbf53a732dad,
+      type: 3}
+  - name: SniperRifle_1
+    prefab: {fileID: 8408571552796993622, guid: 9650f57baacb9a94f8aec48c61f0b228,
+      type: 3}
+  - name: SniperRifle_2
+    prefab: {fileID: 2767043533480746787, guid: 403abf8a42076324c8613ae46454c3bd,
+      type: 3}
+  - name: SniperRifle_3
+    prefab: {fileID: 8544741042096321782, guid: e7c822a7d0050d641b6730b657d0b65d,
+      type: 3}
+  - name: SniperRifle_4
+    prefab: {fileID: 4748204403372949181, guid: 7807b34528a28c342a7244f97cf27779,
+      type: 3}
+  - name: SniperRifle_5
+    prefab: {fileID: 8963895078727493957, guid: 523c93267e42b804192e23837f173803,
+      type: 3}
+  - name: SniperRifle_6
+    prefab: {fileID: 5466305780276719202, guid: 7e247699f451e8e45a47dac7b50ec8ac,
+      type: 3}
+  - name: SubmachineGun_1
+    prefab: {fileID: 4131813802750196764, guid: 6e44deb4399cf70449751d97bb278e87,
+      type: 3}
+  - name: SubmachineGun_2
+    prefab: {fileID: 6941223380479343792, guid: 8162b578e57e06d43ae6d3d1ba6b6d40,
+      type: 3}
+  - name: SubmachineGun_3
+    prefab: {fileID: 2274917743031533196, guid: b227eb7857909f14a9a0a9a7ba2da02a,
+      type: 3}
+  - name: SubmachineGun_4
+    prefab: {fileID: 5639077531908196051, guid: d59f4e0791b2a074ea7d252bb80104e9,
+      type: 3}
+  - name: SubmachineGun_5
+    prefab: {fileID: 7237471737215940281, guid: 9131ee81f1ea2a145accae494e97e9bb,
+      type: 3}
