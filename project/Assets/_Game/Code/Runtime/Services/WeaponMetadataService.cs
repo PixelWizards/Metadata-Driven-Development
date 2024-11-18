@@ -66,7 +66,7 @@ namespace PixelWizards.Services
                 
                 // parse the Weapon Type from GoogleSheets
                 var type = attrRow.Get<string>("type");
-                if (Enum.TryParse(typeof(WeaponType), type, out var output))
+                if (Enum.TryParse(typeof(WeaponType), type, false, out var output))
                 {
                     entry.type = (WeaponType)output;    
                 }
@@ -77,7 +77,7 @@ namespace PixelWizards.Services
                 
                 // parse the AmmoType from GoogleSheets
                 var ammoType = attrRow.Get<string>("ammoType");
-                if (Enum.TryParse(typeof(AmmoType), ammoType, out var ammoTypeOutput))
+                if (Enum.TryParse(typeof(AmmoType), ammoType, false, out var ammoTypeOutput))
                 {
                     entry.ammoType = (AmmoType)ammoTypeOutput;    
                 }
